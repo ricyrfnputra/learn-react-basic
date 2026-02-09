@@ -9,5 +9,14 @@ export default defineConfig({
     tailwindcss,
   ],
 
+  build: {
+    rollupOptions: {
+      input: {
+        index: "index.html",
+        hello_world: "hello-world.html"
+      }
+    }
+  }
+
   
 })
