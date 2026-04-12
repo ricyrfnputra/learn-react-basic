@@ -4,6 +4,7 @@ import HelloWorld from "./HelloWorld.jsx";
 import Container from "./Container.jsx";
 import TodoList from "../todolist/TodoList.jsx";
 import Table from "../table/Table.jsx";
+import AlertButton from "../button/AlertButton.jsx";
 
 createRoot(document.getElementById("root"))
     .render(
@@ -12,6 +13,8 @@ createRoot(document.getElementById("root"))
                 <HelloWorld/>
                 <TodoList/>
                 <Table/>
+
+                <AlertButton text={"Click me"}/>
             </Container>
         </StrictMode>
     )
