@@ -6,6 +6,7 @@ function HelloWorld() {
         <div>
            <HeaderHelloWorld {...props}/>
            <ParagraphHelloWorld/>
+           <TabelHelloWorld/>
         </div>
     )
 } 
@@ -31,5 +32,32 @@ function ParagraphHelloWorld(){
     return (
         <p style={style}>{text.toUpperCase()}</p>
     )
+}
+
+function TabelHelloWorld(){
+    const style = {
+        color: "black",
+        backgroundColor: "brown"
+    };
+
+    return (
+        <table style={style} border="1">
+            <thead>
+                <tr>
+                    <h1>Nama</h1>
+                    <h1>Umur</h1>
+                    <h1>Asal</h1>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Budi</th>
+                    <th>20</th>
+                    <th>Semarang</th>
+                </tr>
+            </tbody>
+        </table>
+    )
+    
 }
 
