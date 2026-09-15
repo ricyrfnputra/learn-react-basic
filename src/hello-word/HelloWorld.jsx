@@ -8,7 +8,7 @@ function HelloWorld() {
            <ParagraphHelloWorld/>
            <TabelHelloWorld/>
         </div>
-    )
+    )   
 } 
 
 export default HelloWorld;

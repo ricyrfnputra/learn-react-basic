@@ -1,6 +1,6 @@
-export default function AlertButton({text}) {
+export default function AlertButton({text, message}) {
     function handleClick(){
-        alert("Button clicked")
+        alert(message)
     }
 
     return (

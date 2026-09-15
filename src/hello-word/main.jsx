@@ -14,7 +14,9 @@ createRoot(document.getElementById("root"))
                 <TodoList/>
                 <Table/>
 
-                <AlertButton text={"Click me"}/>
+                <AlertButton text="Click me" message = "You click me"/>
+
+                <MyButton text="Smash me" onSmash={() => alert("You smash  me")}/>
             </Container>
         </StrictMode>
     )
